@@ -1,0 +1,9 @@
+@media only screen and(min-width:300px){
+    .logo_wrap{
+        background-color: white;
+        padding: 2em;
+        &__logo{
+            width: 7em;
+        }
+    }
+}

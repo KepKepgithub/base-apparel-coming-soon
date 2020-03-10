@@ -5,29 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/main.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="page_wrap">
+    <div class="logo_wrap">
+      <img src="./SVG/logo.svg" alt="logo" class="logo_wrap__logo">
+    </div>
+    <aside>
+      <img src="./Images/hero-mobile.jpg" alt="image_mobile" class="image_mobile">
+      <img src="./Images/hero-mobile.jpg" alt="image_desktop" class="image_desktop">
+    </aside>
+    <article class="content">
+      <div class="content__text">
+        <h1 class="content__text__heading">We're <span class="content__text__heading--dark">coming soon</span></h1>
+      
+        <p class="content__text__paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+      </div>
+       <div class="content__email">
+         <input type="email" placeholder="Email Address" class="content__email__input">
+         <button class="content__email__button"><img src="./SVG/icon-arrow.svg" alt="arrow_button" class="content__email__button__arrow_icon"></button>
+       </div>
+    </article>
+    
+    <footer class="footer">
+      <p class="footer__text">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__text__link">Frontend Mentor</a>. 
+        Coded by <a href="#" class="footer__text__link">Your Name Here</a>.
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
