@@ -31,12 +31,56 @@ html, body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+@media only screen and (min-width: 1024px) {
+  .page_wrap {
+    margin-top: 5em;
+    height: 800px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 7fr 3fr;
+        grid-template-columns: 7fr 3fr;
+    -ms-grid-rows: 100px auto auto;
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: "logo img" "content img" "footer img";
+  }
+  .page_wrap .logo_wrap {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  .page_wrap .content {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: content;
+  }
+  .page_wrap .footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: footer;
+  }
+  .page_wrap .image_desktop {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+}
+
 @media only screen and (min-width: 300px) {
   .image_desktop {
     display: none;
   }
   .image_mobile {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .image_desktop {
+    display: block;
+  }
+  .image_mobile {
+    display: none;
   }
 }
 
@@ -47,6 +91,15 @@ html, body {
   }
   .logo_wrap__logo {
     width: 7em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .logo_wrap {
+    background-color: transparent;
+  }
+  .logo_wrap__logo {
+    width: 12em;
   }
 }
 
@@ -87,6 +140,15 @@ html, body {
     border-radius: 3em;
   }
   .content__email__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     right: 5.2%;
     top: -3%;
@@ -101,6 +163,36 @@ html, body {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .content {
+    text-align: start;
+  }
+  .content__text__heading {
+    font-size: 4em;
+  }
+  .content__text__heading--dark--new_line {
+    display: block;
+  }
+  .content__text__paragraph--new_line {
+    display: block;
+  }
+  .content__email {
+    min-width: 400px;
+  }
+  .content__email__input {
+    background-color: transparent;
+    font-weight: 600;
+    width: 55%;
+  }
+  .content__email__button {
+    right: 45%;
+  }
+  .content__email__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
 @media only screen and (min-width: 300px) {
   .footer {
     text-align: center;
@@ -112,6 +204,12 @@ html, body {
   .footer__text__link {
     text-decoration: none;
     color: #413a3a;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

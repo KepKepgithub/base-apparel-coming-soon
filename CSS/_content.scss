@@ -33,6 +33,10 @@
                 border-radius: 3em;
             }
             &__button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 position: absolute;
                 right: 5.2%;
                 top: -3%;
@@ -42,6 +46,42 @@
                 border:none;
                 background-image: linear-gradient(to right, hsl(0, 80%, 86%) , hsl(0, 74%, 74%) );
                 box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.75);
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:1024px){
+    .content{
+        text-align: start;
+        &__text{
+            &__heading{
+                font-size: 4em;
+                &--dark{
+                    &--new_line{
+                        display: block;
+                    }
+                }
+            }
+            &__paragraph{
+                &--new_line{
+                    display: block;
+                }
+            }
+        }
+        &__email{
+            min-width: 400px;
+            &__input{
+                background-color: transparent;
+                font-weight: 600;
+                width: 55%;
+            }
+            &__button{
+                right: 45%;
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
             }
         }
     }
