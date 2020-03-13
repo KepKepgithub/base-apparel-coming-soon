@@ -97,12 +97,6 @@ html, body {
   }
 }
 
-@media only screen and (min-width: 300px) {
-  .image_container__desktop {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   .image_container__desktop {
     display: block;
