@@ -1,11 +1,11 @@
-// Layout / Styling
 @import "global";
 @import "typography";
 @import "colors";
-@import "grid_layout";
+@import "gradients";
 
-// Blocks
-@import "image";
+
 @import "logo";
+@import "image";
 @import "content";
+@import "email";
 @import "footer";

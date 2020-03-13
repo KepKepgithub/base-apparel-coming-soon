@@ -1,87 +1,27 @@
-@media only screen and(min-width:300px){
+@media only screen and (min-width:300px){
     .content{
+        text-align: center;
         color: $desaturated_red;
-        text-align: center ;
         &__text{
-            padding: 2em 0;
             &__heading{
                 font-size: 3em;
-                text-transform: uppercase;
-                letter-spacing: .2em;
                 font-weight: 300;
+                text-transform: uppercase;
+                padding: 1em .5em 0em .5em;
+                line-height: 1em;
+                letter-spacing: .2em;
+
+                margin-bottom: .5em;
                 &--dark{
-                    display: block;
-                    color: $dark_grayish_red;
-                    margin-bottom: .5em;
                     font-weight: 600;
+                    color: $dark_grayish_red;
                 }
             }
             &__paragraph{
-                padding: 0 1em;
-                font-weight: 600;
-            }
-        }
-        &__email{
-            position: relative;
-            &__input{
-                width: 90%;
-                padding: 1em 2em;
-                color: $desaturated_red;
-                font-weight: 400;
-                font-size: .9em;
-                border: 1px solid $desaturated_red;
-                border-radius: 3em;
-            }
-            &__button{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                position: absolute;
-                right: 5.2%;
-                top: -3%;
-                width: 5.5em;
-                height: 3.8em;
-                border-radius: 3em;
-                border:none;
-                background-image: linear-gradient(to right, hsl(0, 80%, 86%) , hsl(0, 74%, 74%) );
-                box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.75);
-            }
-        }
-    }
-}
-
-@media only screen and(min-width:1024px){
-    .content{
-        text-align: start;
-        &__text{
-            &__heading{
-                font-size: 4em;
-                &--dark{
-                    &--new_line{
-                        display: block;
-                    }
-                }
-            }
-            &__paragraph{
-                &--new_line{
-                    display: block;
-                }
-            }
-        }
-        &__email{
-            min-width: 400px;
-            &__input{
-                background-color: transparent;
-                font-weight: 600;
-                width: 55%;
-            }
-            &__button{
-                right: 45%;
-                &:hover{
-                    opacity: 0.8;
-                    cursor: pointer;
-                }
+                width: 85%;
+                margin: auto;
+                font-size: .95em;
+                margin-bottom: 2em;
             }
         }
     }

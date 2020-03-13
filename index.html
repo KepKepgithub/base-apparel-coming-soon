@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
   <link rel="stylesheet" href="./CSS/main.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
   <div class="page_wrap">
+
     <div class="logo_wrap">
       <img src="./SVG/logo.svg" alt="logo" class="logo_wrap__logo">
     </div>
 
     <aside>
       <div class="image_container">
-        <img src="./Images/hero-mobile.jpg" alt="image_mobile" class="image_mobile">
-        <img src="./Images/hero-desktop.jpg" alt="image_desktop" class="image_desktop">
+        <img src="./Images/hero-mobile.jpg" alt="image" class="image_container__mobile">
+        <img src="./Images/hero-mobile.jpg" alt="image" class="image_container__desktop">
       </div>
     </aside>
 
@@ -34,8 +35,12 @@
       </div>
 
        <div class="content__email">
-         <input type="email" placeholder="Email Address" class="content__email__input">
-         <button class="content__email__button"><img src="./SVG/icon-arrow.svg" alt="arrow_button" class="content__email__button__arrow_icon"></button>
+         <div class="content__email__error">
+           <input type="email" placeholder="Email Address" class="content__email__error__input">
+           <button class="content__email__error__button"><img src="./SVG/icon-arrow.svg" alt="arrow_button" class="content__email__error__button__arrow_icon"></button>
+           <img src="./SVG/icon-error.svg" alt="error_icon" class="content__email__error__icon">
+           <span class="content__email__error__text">Please provide a valid email</span>
+          </div>
        </div>
 
     </article>
@@ -47,5 +52,7 @@
       </p>
     </footer>
   </div>
+
+  <script src="./Javascript/script.js"></script>
 </body>
 </html>
